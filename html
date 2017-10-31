@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>Vege Foodie</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript" src="assets/js/fusioncharts.js"></script>
+<script type="text/javascript" src="assets/js/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript" src="assets/js/java/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+<div>
+    <p id="title">   </p>
+    <p id="publisher">   </p>
+    <p id="f2f_url">   </p>
+    <button id = 'ajaxButton' type = 'button'> Check for Vegetarian</button>
+    <img src="assets/menu.png" id="menu">
+    <img src="assets/cocktail.png" id="cocktail">
+    <img src="assets/coffee.png" id="coffee">
+    <img src="assets/lettuce.png" id="lettuce">
+    </div>
+<div id="chartchina">
+    
+<script type="text/javascript" >
+  FusionCharts.ready(function () {
+   var salesByState = new FusionCharts({
+        "type": "maps/worldwithcountries",
+        "renderAt": "chartContainer",
+        "width": "860",
+        "height": "600",
+        "dataFormat": "json",
+        "dataSource": {
+            "chart": {
+                "caption": "The Percentage of Vegetarians in world",
+                "subcaption": "According to the data from Wikipedia",
+                "entityFillHoverColor": "#cccccc",
+                "numberScaleValue": "1,1000,1000",
+                "numberScaleUnit": "male births per female births",
+                "showLabels": "1",
+                "theme": "fint"
+            },
+            "colorrange": {
+                "minvalue": "0",
+                "startlabel": "Low",
+                "endlabel": "High",
+                "code": "#67cbff",
+                "gradient": "1",
+                "color": [
+                    {
+                        "maxvalue": "20",
+                        "displayvalue": "Average",
+                        "code": "#00caa2"
+                    },
+                    {
+                        "maxvalue": "40",
+                        "code": "#b2de00"
+                    }
+                ]
+            },
+            "data": [
+                {
+                    "id": "131",
+                    "value": "9"
+                },
+                {
+                    "id": "138",
+                    "value": "4"
+                },
+                {
+                    "id": "141",
+                    "value": "1.5"
+                },
+                {
+                    "id": "142",
+                    "value": "8.7"
+                },
+                {
+                    "id": "05",
+                    "value": "8"
+                },
+                {
+                    "id": "160",
+                    "value": "1.2"
+                },
+                {
+                    "id": "159",
+                    "value": "3.2"
+                },
+                {
+                    "id": "170",
+                    "value": "3.3"
+                },
+                {
+                    "id": "181",
+                    "value": "10.3"
+                },
+                {
+                    "id": "192",
+                    "value": "13"
+                },
+                {
+                    "id": "23",
+                    "value": "3"
+                },
+                {
+                    "id": "27",
+                    "value": "7.6"
+                },
+                {
+                    "id": "101",
+                    "value": "5"
+                },
+                {
+                    "id": "104",
+                    "value": "40"
+                },
+                {
+                    "id": "107",
+                    "value": "4.7"
+                },
+                {
+                    "id": "110",
+                    "value": "1"
+                },
+                {
+                    "id": "118",
+                    "value": "4"
+                },
+                {
+                    "id": "133",
+                    "value": "5"
+                },
+                {
+                    "id": "166",
+                    "value": "1.5"
+                },
+                {
+                    "id": "167",
+                    "value": "10"
+                },
+                {
+                    "id": "158",
+                    "value": "2"
+                },
+                {
+                    "id": "157",
+                    "value": "5"
+                },
+                {
+                    "id": "148",
+                    "value": "5"
+                },
+                {
+                    "id": "147",
+                    "value": "10"
+                },
+                {
+                    "id": "140",
+                    "value": "2"
+                },
+                {
+                    "id": "137",
+                    "value": "1.5"
+                },
+                {
+                    "id": "CN.SX",
+                    "value": "111"
+                },
+                {
+                    "id": "CN.SC",
+                    "value": "113"
+                },
+                
+            ]
+        }
+    });
+    salesByState.render();
+});
+</script>
+</div>
+
+
+</head>
+
+<body>
+    <div id="chartContainer">FusionMaps XT will load s map here!</div>
+
+    <script type="text/javascript">
+        console.log('Hello World');
+    </script>
+      <script type="text/javascript" src="assets/js/javascript.js"></script>
+</body>
+</html>
